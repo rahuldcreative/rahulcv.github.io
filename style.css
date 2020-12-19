@@ -1,0 +1,217 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+html, body{
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+	background-color: #222;
+	padding:5px 50px;
+	color: #f2f2f2;
+}
+header nav .logo{
+	color: #f2f2f2;
+	text-transform: uppercase;
+	font-weight:600;
+	letter-spacing:0.5px;
+	font-size: 28px;
+	font-family: 'Oswald', sans-serif;
+}
+
+header nav .d-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav .d-flex .social a{
+	display: inline-block;
+	width:25px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: #000;
+	background-color: #fff;
+	text-decoration: none;
+}
+.banner{
+	width: 100%;
+	height: auto;
+	position: relative;
+	height:75vh;
+	color: #f2f2f2;
+}
+.banner:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0, 0, 0, 0.57);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.banner img{
+	width: 100%;
+	height:75vh;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+.banner figure{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+	margin:0;
+	max-width:900px;
+	margin:auto;
+}
+
+h1{
+	font-weight:600 !important;
+	color: #222 !important;
+	font-family: 'Oswald', sans-serif !important;
+	text-transform: uppercase;
+	font-size: 28px !important;
+}
+
+.banner figure h1{
+	font-size:42px !important;
+	margin:0;
+	color: #f2f2f2 !important;
+}
+.banner figure p{
+	font-size:18px;
+	margin-top: 10px;
+	line-height: 2.3rem;
+	font-weight: 300 !important;
+}
+
+.contact{
+	margin:50px 0 0;
+}
+
+.contact h1{
+	font-size:32px;
+}
+
+.contact-main{
+	width: 100%;
+	margin:auto;
+}
+
+.contact-main h2{
+	font-size: 24px;
+	color: #222;
+	font-weight: 700;
+}
+.contact-main p {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+}
+.contact-main .contact-info{
+	margin-top: 15px;
+}
+.contact-main .contact-info a {
+    display: block;
+    margin: 2px 0;
+    color: #e3871a;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.5px;
+}
+.contact-main .contact-img img {
+    width: 100%;
+}
+.education{
+	margin-bottom:50px;
+}
+.education li{
+	font-size: 19px;
+	margin-bottom: 10px;
+}
+.education ul {
+    padding: 0 20px 25px;
+}
+.education ul li.circle {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.project h1{
+	margin:50px 0;
+}
+
+.project .project-cols{
+    width: 100%;
+    height:250px;
+    overflow:hidden;
+    position: relative;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	margin-bottom:30px;
+}
+.project .project-cols img{
+	width: 100%;
+}
+.project .project-cols figure {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(10, 44, 86, 0.93);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.project .project-cols:hover figure{
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+.project .project-cols figure .figure-cols{
+	text-align: center;
+}
+
+.project .project-cols figure .figure-cols .title{
+	font-size: 24px;
+	font-weight:700;
+	color: #f2f2f2;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+.project .project-cols figure .figure-cols a{
+	display: inline-block;
+	background: #f2f2f2;
+	color: #222;
+	padding:8px 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	margin-top:15px;
+	font-size: 16px;
+	transition: all 0.5s;
+}
+.project .project-cols figure .figure-cols a:hover{
+	text-decoration: none;
+	background: #222;
+	color: #f2f2f2;
+	transition: all 0.5s;
+}
+.project .project-cols figure .figure-cols a:focus{
+	text-decoration: none;
+}
